@@ -50,32 +50,26 @@
         .hero-content { position: relative; z-index: 1; padding: 20px; max-width: 800px; }
         .hero-content h1 { font-size: 3.5rem; font-weight: 900; text-shadow: 0 4px 10px rgba(0,0,0,0.5); margin-bottom: 20px; line-height: 1.2; }
         
-        .scroll-hint-wrapper {
-            width: 100%;
-            height: 0;
-            text-align: center;
-            position: relative;
-            margin-top: -30px; 
-            z-index: 10;
-        }
-
         .scroll-hint { 
-            display: inline-block;
+            position: absolute; 
+            bottom: 30px; 
+            left: 50%; 
+            transform: translateX(-50%); 
             animation: bounce 2s infinite; 
             font-size: 0.9rem; 
             opacity: 0.8;
-            padding: 10px 15px; 
+            padding: 10px; 
             background: rgba(0, 0, 0, 0.5); 
             color: #ffffff; 
             border-radius: 5px;
             white-space: nowrap;
-            transform: translateY(-50%); 
+            z-index: 5;
         }
 
         @keyframes bounce { 
-            0%, 20%, 50%, 80%, 100% {transform: translateY(-50%) translateZ(0);} 
-            40% {transform: translateY(-60%) translateZ(0);} 
-            60% {transform: translateY(-55%) translateZ(0);} 
+            0%, 20%, 50%, 80%, 100% {transform: translate(-50%, 0);} 
+            40% {transform: translate(-50%, -10px);} 
+            60% {transform: translate(-50%, -5px);} 
         }
 
         /* --- 4. 滾動式敘事佈局 (Scrollytelling Layout) --- */
@@ -199,17 +193,15 @@
             <span style="font-size: 1rem; letter-spacing: 5px; background: rgba(255, 204, 0, 0.9); color: #000; padding: 5px 10px; border-radius: 3px; font-weight: bold; margin-bottom: 15px; display: inline-block;">TVBS 深度報導</span>
             <h1>亞馬遜<br>窒息與重生</h1>
             <p style="font-size: 1.5rem; letter-spacing: 2px; font-weight: 400;">前進地球之肺的生存最前線</p>
+            
+            <div class="scroll-hint">▼ 向下滑動展開旅程</div>
         </div>
     </header>
-    
-    <div class="scroll-hint-wrapper">
-        <div class="scroll-hint">▼ 向下滑動展開旅程</div>
-    </div>
     
     <section class="lead-paragraph">
         <div class="container">
             <p>
-                2024年，亞馬遜經歷了史上最嚴峻的考驗。從「煮沸」的河水到失控的野火，這片「地球之肺」正發出求救訊號。TVBS 採訪團隊深入核心，帶您直擊這場關乎全人類命運的生存戰役。
+                2024年，亞馬遜經歷了史上最嚴峻的考驗。從「煮沸」的河水到失控的野火，這片「地球之肺」正發出求救訊號。TVBS採訪團隊深入核心，帶您直擊這場關乎全人類命運的生存戰役。
             </p>
         </div>
     </section>
@@ -220,10 +212,10 @@
 
             <section class="step" id="section-1" data-index="1">
                 <h2>01. 雨林真相：高溫下的沉默</h2>
-                <p>亞馬遜的核心功能並非製造氧氣，而是全球最大的「水循環引擎」與「碳吸收器」。它透過蒸散作用形成 **「空中河流」**，是調節南美洲氣候的關鍵。然而，極端氣候正讓這套系統失靈。</p>
-                <p>2023年乾旱期，亞馬遜 Tefé 湖水溫曾飆升至 **39°C**，導致上百隻河豚集體「熱死」。除了氣候，船隻噪音也正驅趕魚蝦，瓦解傳統河岸社區的漁獵生計。</p>
+                <p>亞馬遜的核心功能並非製造氧氣，而是全球最大的「水循環引擎」與「碳吸收器」。它透過蒸散作用形成<strong>「空中河流」</strong>，是調節南美洲氣候的關鍵。然而，極端氣候正讓這套系統失靈。</p>
+                <p>2023年乾旱期，亞馬遜 Tefé 湖水溫曾飆升至<strong>39°C</strong>，導致上百隻河豚集體「熱死」。除了氣候，船隻噪音也正驅趕魚蝦，瓦解傳統河岸社區的漁獵生計。</p>
                 <p class="scrolly-quote">
-                    「如果森林退化與砍伐合計超過 20%至25%，亞馬遜將跨入不可逆轉的『稀樹草原化臨界點』。」
+                    「如果森林退化與砍伐合計超過20%至25%，亞馬遜將跨入不可逆轉的『稀樹草原化臨界點』。」
                 </p>
 
                 <div class="video-wrapper">
@@ -234,8 +226,8 @@
 
             <section class="step" id="section-2" data-index="2">
                 <h2>02. 開發兩難：被切開的綠肺</h2>
-                <p>一條名為 **「自由大道」** 的公路工程全速推進，承諾將兩小時車程縮短至 30 分鐘。然而，這條公路像利刃般切開了貝倫環境保護區，導致嚴重的 **「棲地破碎化」**。</p>
-                <p>位於當地的 CETRAS 救援中心，每年接收約 400-500 隻受害動物。其中包括因母海牛被誘捕而孤立無援的幼仔。開發的喧囂，讓動物們重返自然的道路充滿不確定性。</p>
+                <p>一條名為<strong>「自由大道」</strong>的公路工程全速推進，承諾將兩小時車程縮短至30分鐘。然而，這條公路像利刃般切開了貝倫環境保護區，導致嚴重的<strong>「棲地破碎化」</strong>。</p>
+                <p>位於當地的 CETRAS 救援中心，每年接收約400-500隻受害動物。其中包括因母海牛被誘捕而孤立無援的幼仔。開發的喧囂，讓動物們重返自然的道路充滿不確定性。</p>
                 <p class="scrolly-quote">
                    「道路的開通往往會引發次生開發，如非法伐木、採礦，加劇環境犯罪。」
                 </p>
@@ -248,8 +240,8 @@
 
             <section class="step" id="section-3" data-index="3">
                 <h2>03. 藍碳寶庫：水下的隱形殺手</h2>
-                <p>亞馬遜紅樹林是全球高效的 **「藍碳」** 儲存庫，儲碳效率是陸地森林的 **3-5倍**。但這座千年碳庫正被 **汞汙染** 摧毀，光合作用下降 30-50%。</p>
-                <p>同時，森林焚燒產生酸雨，部分河段 pH 值曾測得低至 2。最可怕的是，汞毒已透過食物鏈累積在當地孩童的胎盤和母乳中。</p>
+                <p>亞馬遜紅樹林是全球高效的<strong>「藍碳」</strong>儲存庫，儲碳效率是陸地森林的<strong>3-5倍</strong>。但這座千年碳庫正被<strong>汞汙染</strong>摧毀，光合作用下降30-50%。</p>
+                <p>同時，森林焚燒產生酸雨，部分河段 pH 值曾測得低至2。最可怕的是，汞毒已透過食物鏈累積在當地孩童的胎盤和母乳中。</p>
                 <p class="scrolly-quote">
                     「一旦破壞紅樹林，就等於釋放了累積數千年的碳，我們沒有下一個千年去重新吸收它。」
                 </p>
@@ -262,8 +254,8 @@
 
              <section class="step" id="section-4" data-index="4">
                 <h2>04. 危機轉機：火線上的守護者</h2>
-                <p>2024年亞馬遜遭遇史上最嚴重的野火浩劫，光是八月就爆發 **3.8萬起** 火災，創下十年新高。氣候變遷引發的乾旱加上人為縱火，形成致命的惡性循環，讓這片雨林陷入「窒息」危機。</p>
-                <p>面對這場各國束手無策的災難，巴西提出了一項金融解方——**「熱帶森林永久基金 (TFFF)」**。這項目標募集 **1250億美元** 的基金，試圖用「利差養森林」的資本力量，為森林保育提供一條長久的出路。</p>
+                <p>2024年亞馬遜遭遇史上最嚴重的野火浩劫，光是八月就爆發<strong>3.8萬起</strong>火災，創下十年新高。氣候變遷引發的乾旱加上人為縱火，形成致命的惡性循環，讓這片雨林陷入「窒息」危機。</p>
+                <p>面對這場各國束手無策的災難，巴西提出了一項金融解方——<strong>「熱帶森林永久基金(TFFF)」</strong>。這項目標募集<strong>1250億美元</strong>的基金，試圖用「利差養森林」的資本力量，為森林保育提供一條長久的出路。</p>
 
                 <p class="scrolly-quote">
                     「森林死了，水就生病了，我們也一起生病。」
@@ -277,8 +269,8 @@
 
             <section class="step" id="section-5" data-index="5">
                 <h2>05. 共存經濟：不砍樹的致富路</h2>
-                <p>巴西莓 (Açaí) 的全球產值預計在 2035 年達到 **36 億美元**。這種在原生雨林中生長的 **「林下經濟」** 模式，證明了活著的森林比砍伐種植大豆更有價值。</p>
-                <p>當地科學家正將生物多樣性轉化為生技產品，包括抗氧化物高達一般蜂蜜 **20-100倍** 的「超級蜂蜜」，並從土壤微生物中尋找具有抗生素潛力的 **「未來新藥」**。</p>
+                <p>巴西莓 (Açaí) 的全球產值預計在2035年達到<strong>36億美元</strong>。這種在原生雨林中生長的<strong>「林下經濟」</strong>模式，證明了活著的森林比砍伐種植大豆更有價值。</p>
+                <p>當地科學家正將生物多樣性轉化為生技產品，包括抗氧化物高達一般蜂蜜<strong>20-100倍</strong>的「超級蜂蜜」，並從土壤微生物中尋找具有抗生素潛力的<strong>「未來新藥」</strong>。</p>
                 <p class="scrolly-quote">
                     「我們想證明的是：巴西莓蜂蜜非常適合在亞馬遜地區大規模推廣。」
                 </p>
@@ -291,8 +283,8 @@
 
             <section class="step" id="section-6" data-index="6">
                 <h2>06. 貝倫翻身：COP30 的豪賭</h2>
-                <p>為迎接 COP30，主辦城市貝倫投入超過 **256 億台幣** 進行城市大改造。昔日被戲稱為「臭水溝」的運河，變身為現代化的 Nova Doca 親水公園，展現了城市轉型的決心。</p>
-                <p>然而，國際盛會也帶來了爭議：住宿費用飆漲至平時的 **15-20倍**。貝倫的豪賭能否避免重蹈橡膠時代的覆轍，將是留給巴西最大的考題。</p>
+                <p>為迎接 COP30，主辦城市貝倫投入超過<strong>256億台幣</strong>進行城市大改造。昔日被戲稱為「臭水溝」的運河，變身為現代化的 Nova Doca 親水公園，展現了城市轉型的決心。</p>
+                <p>然而，國際盛會也帶來了爭議：住宿費用飆漲至平時的<strong>15-20倍</strong>。貝倫的豪賭能否避免重蹈橡膠時代的覆轍，將是留給巴西最大的考題。</p>
                 <p class="scrolly-quote">
                     帕拉州長巴爾巴略：「活的森林比被砍伐的森林更有價值。」
                 </p>
@@ -346,13 +338,13 @@
             <div class="content-block">
                 <h3>打破迷思：它不是氧氣工廠，而是全球最大的「冷氣機」</h3>
                 <p>長久以來，教科書告訴我們亞馬遜是「地球之肺」，負責製造氧氣。然而，科學界早已修正了這個浪漫的想像。事實上，雨林光合作用產生的氧氣，幾乎與其自身呼吸作用、腐爛及土壤微生物消耗的氧氣相互抵銷，淨氧氣產出約等於零。真正提供地球大部分氧氣的，其實是海洋中的浮游植物。</p>
-                <p>那麼，亞馬遜真正的價值何在？它更像是一台巨大的「全球空調」與「水循環引擎」。亞馬遜雨林是全球最大的陸地碳匯，每年吸收數十億噸二氧化碳，將碳固定在樹體與土壤中。更關鍵的是其強大的「蒸散作用」——每一棵大樹就像一台巨型抽水機，每天將水蒸氣送回大氣，整個亞馬遜每天釋放約兩百億噸水蒸氣，形成肉眼看不見的「空中河流」（Flying Rivers）。這些水氣不僅滋潤了南美洲的農業，更調節著全球的降雨模式。一旦雨林消失，這套冷卻系統將徹底停擺。</p>
+                <p>那麼，亞馬遜真正的價值何在？它更像是一台巨大的「全球空調」與「水循環引擎」。亞馬遜雨林是全球最大的陸地碳匯，每年吸收數十億噸二氧化碳，將碳固定在樹體與土壤中。更關鍵的是其強大的「蒸散作用」——每一棵大樹就像一台巨型抽水機，每天將水蒸氣送回大氣，整個亞馬遜每天釋放約兩百億噸水蒸氣，形成肉眼看不見的<strong>「空中河流」</strong>（Flying Rivers）。這些水氣不僅滋潤了南美洲的農業，更調節著全球的降雨模式。一旦雨林消失，這套冷卻系統將徹底停擺。</p>
 
                 <div class="info-box">
-                    <h4>BOX：亞馬遜的「空中河流」 (Flying Rivers)</h4>
+                    <h4>BOX：亞馬遜的<strong>「空中河流」</strong> (Flying Rivers)</h4>
                     <ul>
                         <li><strong>定義：</strong>亞馬遜雨林透過蒸散作用釋放的巨大水氣流。</li>
-                        <li><strong>規模：</strong>亞馬遜每天向大氣釋放約 <strong>200億噸</strong> 水蒸氣，這個水量甚至比亞馬遜河注入大西洋的每日水量（170億噸）還要大。</li>
+                        <li><strong>規模：</strong>亞馬遜每天向大氣釋放約<strong>200億噸</strong>水蒸氣，這個水量甚至比亞馬遜河注入大西洋的每日水量（170億噸）還要大。</li>
                         <li><strong>功能：</strong>將水氣輸送至巴西中南部、阿根廷等地，是南美洲農業與水力發電的命脈，同時影響全球風場與氣候調節。</li>
                     </ul>
                 </div>
@@ -394,7 +386,7 @@
             <div class="content-block">
                 <h3>工地直擊：當森林變成紅土</h3>
                 <p>我們來到施工現場，空氣中瀰漫著令人窒息的柴油味與塵土。重型機具的轟隆聲響徹雲霄，地面微微震動。眼前原本茂密的原始森林消失了，取而代之的是一道綿延到天邊的光禿紅土帶。一邊是殘存的茂密林冠，另一邊則是連樹樁都已被剷除殆盡的荒地，在短短幾公尺間形成強烈而殘酷的對比。</p>
-                <p>儘管州政府與帕拉州長巴爾巴略（Helder Barbalho）強調這是一條「永續公路」，聲稱設計了24條野生動物廊道、單車道及太陽能照明，甚至反駁美國總統川普的「醜聞」指控。但現實是，所謂的動物廊道目前仍只存在於設計圖上。生態學家指出，道路對森林的影響是不可逆的。它導致了嚴重的「棲地破碎化」（Habitat fragmentation），原本完整的生態系被一分為二，阻斷了動物的遷徙路線，更縮小了牠們繁衍與覓食的空間。</p>
+                <p>儘管州政府與帕拉州長巴爾巴略（Helder Barbalho）強調這是一條「永續公路」，聲稱設計了24條野生動物廊道、單車道及太陽能照明，甚至反駁美國總統川普的「醜聞」指控。但現實是，所謂的動物廊道目前仍只存在於設計圖上。生態學家指出，道路對森林的影響是不可逆的。它導致了嚴重的<strong>「棲地破碎化」</strong>（Habitat fragmentation），原本完整的生態系被一分為二，阻斷了動物的遷徙路線，更縮小了牠們繁衍與覓食的空間。</p>
 
                 <figure class="photo-block">
                     <img src="https://placehold.co/800x500/333/FFFFFF?text=示意圖：被公路切開的雨林空拍" alt="自由大道施工現場">
@@ -435,7 +427,7 @@
             <div class="article-header">
                 <span class="tag">第三章</span>
                 <h2>隱形殺手入侵／當「藍碳」變毒藥：亞馬遜紅樹林的汞污染危機</h2>
-                <p class="article-subtitle">當全球目光聚焦在亞馬遜雨林的砍伐時，另一場更隱密、更致命的危機正在水下蔓延。亞馬遜河口擁有全球第二大的紅樹林面積，這些沿海濕地被稱為「藍碳」，是地球對抗暖化的超級防線。然而，這座寶庫正在變成毒氣室。非法採金帶來的汞污染、氣候變遷引發的酸雨，正聯手摧毀紅樹林的根基，將這片守護地球的淨土，轉化為釋放千年中劇毒的源頭。</p>
+                <p class="article-subtitle">當全球目光聚焦在亞馬遜雨林的砍伐時，另一場更隱密、更致命的危機正在水下蔓延。亞馬遜河口擁有全球第二大的紅樹林面積，這些沿海濕地被稱為<strong>「藍碳」</strong>，是地球對抗暖化的超級防線。然而，這座寶庫正在變成毒氣室。非法採金帶來的汞污染、氣候變遷引發的酸雨，正聯手摧毀紅樹林的根基，將這片守護地球的淨土，轉化為釋放千年中劇毒的源頭。</p>
             </div>
 
             <div class="content-block">
@@ -457,8 +449,8 @@
                 <p>Simone Pereira 教授的研究揭露了驚人的事實：汞已經以驚人的濃度累積在當地女性的胎盤、母乳以及孩子的體內。當孕婦攝入受污染的魚肉，或吸入含汞空氣，汞會穿過胎盤直接進入胎兒體內，造成永久性、不可逆的神經系統損害。這是一場無聲的公共衛生危機，整整一代的亞馬遜原住民與河岸居民，正在尚未出生前就已中毒。</p>
 
                 <h3>酸雨腐蝕：pH值2的死亡之河</h3>
-                <p>氣候變遷與工業污染還帶來了另一個殺手——酸雨。當森林大火產生的氣體（NOx, SO2）與工業排放物混合水氣後落下，會劇烈改變河水的酸鹼值。原本呈弱酸至中性的亞馬遜河水，在某些工業區附近（如 Barcarena），曾測得 pH 值低至 2 的極端酸性。</p>
-                <p>這種強酸水質會殺死水中的魚類與微生物，導致「整條河死亡」。酸水還會沖刷土壤中的養分流入河流，引發優養化與缺氧（Hypoxia），進一步窒息水下生命。從汞毒到酸雨，亞馬遜的水文系統正在崩潰，而這正是支撐整個「空中河流」氣候調節功能的基礎。</p>
+                <p>氣候變遷與工業污染還帶來了另一個殺手——酸雨。當森林大火產生的氣體（NOx, SO2）與工業排放物混合水氣後落下，會劇烈改變河水的酸鹼值。原本呈弱酸至中性的亞馬遜河水，在某些工業區附近（如 Barcarena），曾測得 pH 值低至2的極端酸性。</p>
+                <p>這種強酸水質會殺死水中的魚類與微生物，導致「整條河死亡」。酸水還會沖刷土壤中的養分流入河流，引發優養化與缺氧（Hypoxia），進一步窒息水下生命。從汞毒到酸雨，亞馬遜的水文系統正在崩潰，而這正是支撐整個<strong>「空中河流」</strong>氣候調節功能的基礎。</p>
 
                 <div class="video-container">
                     <div class="video-title">🎬 完整專題報導：藍碳寶庫</div>
@@ -478,7 +470,7 @@
 
             <div class="content-block">
                 <h3>森林劣化：比砍伐更隱蔽的殺手</h3>
-                <p>我們常關注「森林砍伐」（Deforestation），也就是樹木被徹底清除。但 IPAM 執行董事 André Guimarães 提醒我們，還有一個更隱蔽的威脅：「森林劣化」（Degradation）。這包括選擇性伐木、樹冠破碎、邊緣效應等。劣化後的森林雖然看起來還像森林，但已經喪失了保濕與調節溫度的功能。</p>
+                <p>我們常關注「森林砍伐」（Deforestation），也就是樹木被徹底清除。但 IPAM 執行董事 André Guimarães 提醒我們，還有一個更隱蔽的威脅：<strong>「森林劣化」</strong>（Degradation）。這包括選擇性伐木、樹冠破碎、邊緣效應等。劣化後的森林雖然看起來還像森林，但已經喪失了保濕與調節溫度的功能。</p>
                 <p>這形成了一個死亡螺旋：被劣化的森林更乾燥、溫度更高（可飆升2-4°C），因此更容易發生野火；而野火又進一步導致森林劣化。目前亞馬遜約有40%的區域已經受到人類活動的改變。即使是自然恢復的次生林，其碳吸收能力與生物多樣性，在60-80年內都無法追上原生林。</p>
 
                 <h3>守護者的悲歌：沒有森林就沒有文化</h3>
@@ -486,7 +478,7 @@
                 <p>森林退化直接衝擊了他們的生存：授粉者減少導致野果歉收，獵物因棲地破碎而難以尋覓，水源被汞污染毒害。更諷刺的是，儘管原住民族保護了全球80%的生物多樣性，但在全球氣候基金的分配中，他們卻只分到了不到1%。他們不僅要對抗大火，還要對抗制度的不公。</p>
 
                 <h3>TFFF 基金：1250億美元的金融豪賭</h3>
-                <p>為了打破「保育無利可圖」的困境，巴西在 COP30 前夕提出了一項極具野心的金融工具——「熱帶森林永久基金」（Tropical Forests Forever Facility, TFFF）。這個計畫目標是向已開發國家與主權基金募集1250億美元的本金。</p>
+                <p>為了打破「保育無利可圖」的困境，巴西在 COP30 前夕提出了一項極具野心的金融工具——<strong>「熱帶森林永久基金」</strong>（Tropical Forests Forever Facility, TFFF）。這個計畫目標是向已開發國家與主權基金募集1250億美元的本金。</p>
                 <p>TFFF 的運作邏輯是「利差養森林」：本金不直接消耗，而是投入低風險投資產生收益。這些收益將按「每公頃現存森林」支付給熱帶雨林國家，作為他們保護森林的「租金」。這是一個去政治化、長期的資金流，試圖解決過去依賴捐款的不穩定性。巴西總統魯拉承諾，TFFF 的資金中至少有20%將直接分配給原住民族與在地社群。</p>
 
                 <figure class="photo-block">
@@ -507,18 +499,18 @@
             <div class="article-header">
                 <span class="tag">第五章</span>
                 <h2>不砍樹也能發大財／亞馬遜的紫色黃金：巴西莓與康普茶的生物經濟革命</h2>
-                <p class="article-subtitle">在亞馬遜，長久以來存在一個迷思：要發展經濟，就必須砍伐森林來種植大豆或放牧牛隻。然而，在帕拉州，一場靜悄悄的革命正在推翻這個舊觀念。這裡的人們發現，活著的森林比死掉的更有價值。從風靡全球的超級食物「巴西莓」（Açaí），到利用雨林微生物研發的未來新藥，一種名為「生物經濟」（Bioeconomy）或「林下經濟」的模式正在崛起。</p>
+                <p class="article-subtitle">在亞馬遜，長久以來存在一個迷思：要發展經濟，就必須砍伐森林來種植大豆或放牧牛隻。然而，在帕拉州，一場靜悄悄的革命正在推翻這個舊觀念。這裡的人們發現，活著的森林比死掉的更有價值。從風靡全球的超級食物「巴西莓」（Açaí），到利用雨林微生物研發的未來新藥，一種名為「生物經濟」（Bioeconomy）或<strong>「林下經濟」</strong>的模式正在崛起。</p>
             </div>
 
             <div class="content-block">
                 <h3>紫色奇蹟：巴西莓的林下經濟學</h3>
                 <p>走進貝倫的 Ver-o-Peso 市場，隨處可見一桶桶深紫色的漿果，這就是巴西莓。對當地人來說，它是搭配炸魚的主食；對全球健康市場來說，它是富含花青素的抗氧化聖品。</p>
-                <p>巴西莓的價值在於它展示了「林下經濟」（Agroforestry）的潛力。不同於大豆需要將森林剃光，巴西莓生長在原生雨林中，利用天然遮蔭，不需要大規模砍伐或破壞生態。預計到2035年，巴西莓的全球市場價值將達到36億美元。這證明了，保護森林與經濟發展並非零和遊戲。</p>
+                <p>巴西莓的價值在於它展示了<strong>「林下經濟」</strong>（Agroforestry）的潛力。不同於大豆需要將森林剃光，巴西莓生長在原生雨林中，利用天然遮蔭，不需要大規模砍伐或破壞生態。預計到2035年，巴西莓的全球市場價值將達到36億美元。這證明了，保護森林與經濟發展並非零和遊戲。</p>
 
                 <div class="info-box">
                     <h4>BOX：巴西莓 (Açaí) 營養價值</h4>
                     <ul>
-                        <li><strong>抗氧化霸主：</strong>富含花青素，抗氧化能力是藍莓的 <strong>10倍</strong>、紅酒的 **30倍**。</li>
+                        <li><strong>抗氧化霸主：</strong>富含花青素，抗氧化能力是藍莓的<strong>10倍</strong>、紅酒的<strong>30倍</strong>。</li>
                         <li><strong>健康油脂：</strong>富含 Omega-3, 6, 9，有助心血管健康。</li>
                         <li><strong>低糖高纖：</strong>純果泥含糖量極低，適合生酮飲食與健身族群。</li>
                     </ul>
@@ -538,7 +530,7 @@
                 </figure>
 
                 <h3>生態旅遊：森林之母的召喚</h3>
-                <p>在康布島（Combu），「森林型可可」與生態旅遊結合，成為另一種守護模式。Dona Nena 經營的巧克力工坊「康布島之女」，堅持在森林樹蔭下種植可可，保留了百年老樹與原始林相。這裡有一棵超過280年的巨樹，被原住民視為「森林之母」。</p>
+                <p>在康布島（Combu），「森林型可可」與生態旅遊結合，成為另一種守護模式。Dona Nena 經營的巧克力工坊「康布島之女」，堅持在森林樹蔭下種植可可，保留了百年老樹與原始林相。這裡有一棵超過280年的巨樹，被原住民視為<strong>「森林之母」</strong>。</p>
                 <p>遊客來到這裡，不只是買巧克力，更是體驗與森林共呼吸的生活方式。雖然氣候變遷導致可可減產，但生態旅遊帶來的穩定收入，讓當地人更有底氣拒絕砍伐森林的誘惑。亞馬遜的未來，就藏在這些不砍樹也能致富的故事裡。</p>
                 
                 <div class="video-container">
@@ -587,21 +579,22 @@
         </div>
     </article>
     <footer style="background-color: #1a1a1a; padding: 80px 20px; text-align: center; color: #ffffff; position: relative; z-index: 20;">
-        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
              
              <img src="https://raw.githubusercontent.com/AllisonTVBS/AllisonTVBS.github.io/main/TVBS%20logo-white.png" alt="TVBS Logo" style="height: 45px; margin-bottom: 25px;">
              
              <h3 style="margin: 0 0 35px 0; color: #fff; font-weight: bold; font-size: 1.5rem; letter-spacing: 1px;">TVBS邀您一同正視雨林現況，守護地球綠肺</h3>
             
-            <div class="credits" style="margin-bottom: 10px; font-size: 1rem; color: #dddddd; line-height: 1.8;">
+            <div class="credits" style="margin-bottom: 15px; font-size: 1rem; color: #dddddd; line-height: 1.8;">
                 製作人/記者：許岱軒　　攝影：朱光弘　　策展人：陳祖晴　　監製：王結玲
             </div>
             
-            <p class="copyright" style="font-size: 0.85rem; color: #888888; margin: 0;">
+            <p class="copyright" style="font-size: 0.85rem; color: #888888; margin: 0 0 40px 0;">
                 &copy; 2025 TVBS Media Inc. All Rights Reserved.
             </p>
 
-            <a href="#" style="display: inline-block; margin-top: 40px; padding: 12px 35px; background-color: #FFCC00; color: #003690; text-decoration: none; border-radius: 50px; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">分享專題</a>
+            <a href="#" style="display: inline-block; padding: 12px 35px; background-color: #FFCC00; color: #003690; text-decoration: none; border-radius: 50px; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">分享專題</a>
+
         </div>
     </footer>
 
