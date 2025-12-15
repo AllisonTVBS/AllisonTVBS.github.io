@@ -70,7 +70,7 @@
         /* --- 4. 滾動式敘事佈局 (Scrollytelling Layout) --- */
         .main-container { position: relative; display: flex; flex-direction: column-reverse; }
         .scrolly-content { width: 100%; z-index: 10; padding-bottom: 50px; background: transparent; }
-        .step { min-height: 80vh; padding: 60px 20px; display: flex; flex-direction: column; justify-content: center; opacity: 0.3; transition: opacity 0.5s; background: rgba(255,255,255,0.95); border-bottom: 1px solid #eee; }
+        .step { min-height: 100vh; padding: 60px 20px; display: flex; flex-direction: column; justify-content: center; opacity: 0.3; transition: opacity 0.5s; background: rgba(255,255,255,0.95); border-bottom: 1px solid #eee; }
         .step.is-active { opacity: 1; background: rgba(255,255,255,1); }
         .step h2 { font-size: 1.8rem; color: var(--brand-color); margin-bottom: 25px; border-left: 6px solid var(--accent-color); padding-left: 15px; line-height: 1.4; }
         .step p { font-size: 1.1rem; margin-bottom: 20px; color: #333; text-align: justify; }
@@ -125,9 +125,9 @@
             .hero-content h1 { font-size: 5rem; }
             .main-container { flex-direction: row; }
             .scrolly-content { width: 50%; }
-            .step { background: transparent; border-bottom: none; padding: 120px 80px; min-height: 80vh; }
+            .step { background: transparent; border-bottom: none; padding: 120px 80px; min-height: 100vh; }
             .step.is-active { background: rgba(255,255,255,0.85); box-shadow: 0 0 30px rgba(0,0,0,0.05); }
-            .sticky-visual { position: sticky; top: 0; width: 50%; height: 80vh; }
+            .sticky-visual { position: sticky; top: 0; width: 50%; height: 100vh; }
         }
         
         /* 獨立前言區塊樣式 */
@@ -581,6 +581,7 @@
     </script>
 </body>
 </html>
+
 
 
 
