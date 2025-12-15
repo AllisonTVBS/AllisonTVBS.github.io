@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【TVBS 深度報導】跨越兩萬公里的台灣魂：巴西台僑的跨世代奮鬥與文化重生 | TVBS News</title>
+    <style>
+        /* 基礎設定 */
+        :root {
+            --primary-color: #003366;
+            --accent-color: #ff6600;
+            --text-color: #333;
+            --light-bg: #f4f4f4;
+            --white: #ffffff;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        /* 導覽列 */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        nav a:hover {
+            color: var(--white);
+        }
+
+/* --- 主視覺區 (Hero Section) --- */
+        .hero {
+            /* hero-image-placeholder.jpg */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image-placeholder.jpg');
+
+
+            /* 讓照片填滿整個區塊，並保持比例 */
+            background-size: cover;
+            
+            /* 讓照片居中顯示 */
+            background-position: center;
+            
+            /* 設定高度 */
+            height: 60vh;
+            
+            /* 排版設定 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-bottom: 40px;
+            
+            /* 備用底色 */
+            background-color: #003366; 
+                    
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 300;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .tag {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* 首頁精選 (Highlights) */
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn-read {
+            display: inline-block;
+            padding: 8px 20px;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .btn-read:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* 文章內圖片樣式設定 (修正後) */
+        .photo-block {
+            margin: 30px auto; /* auto 讓區塊置中 */
+            text-align: center;
+            max-width: 100%;
+        }
+
+        .photo-block img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            /* 如果圖片連結失效，顯示灰色背景讓你知道位置是對的 */
+            background-color: #eee; 
+            min-height: 200px; /* 預留高度，避免沒圖時縮成一條線 */
+            display: block; /* 避免底部出現空隙 */
+            margin: 0 auto;
+        }
+
+        .photo-block figcaption {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* 深度報導內容 (Main Article) */
+        .article-section {
+            background: var(--white);
+            padding: 60px 0;
+            margin-bottom: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .article-header {
+            margin-bottom: 40px;
+        }
+
+        .article-header h2 {
+            font-size: 2.2rem;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .article-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .content-block {
+            margin-bottom: 40px;
+        }
+
+        .content-block h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-block p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .content-block ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .content-block li {
+            margin-bottom: 10px;
+        }
+
+        /* 頁尾 (Footer) */
+        footer {
+            background-color: #222;
+            color: #aaa;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .credits {
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .credits span {
+            margin: 0 10px;
+            color: #fff;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+        }
+
+        /* RWD 調整 */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                display: none; 
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .article-header h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+/* --- 新增：YouTube 影片專用樣式 --- */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 這是 16:9 的黃金比例 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 40px 0; /* 上下留白 */
+            border-radius: 8px; /* 圓角比較好看 */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* 加一點陰影 */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #cc0000; /* YouTube 紅色 */
+            margin-bottom: 10px;
+            border-left: 4px solid #cc0000;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">TVBS NEWS | 專題報導</div>
+            <nav>
+                <ul>
+                    <li><a href="#highlights">專題精選</a></li>
+                    <li><a href="#chapter1">味蕾冒險</a></li>
+                    <li><a href="#chapter2">白色巨塔</a></li>
+                    <li><a href="#chapter3">文化混血</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="tag">TVBS 深度報導 </span>
+            <h1>跨越兩萬公里的台灣魂</h1>
+            <p>巴西台僑的跨世代奮鬥與文化重生</p>
+        </div>
+    </section>
+
+    <div class="container" style="max-width: 800px; text-align: center; margin-bottom: 60px;">
+        <p style="font-size: 1.1rem; color: #555;">
+            1980年代，大批台灣人提著皮箱遠赴南美洲，在巴西從事進出口貿易或製造業。經過40多年的時代沖刷，第一代移民建立了龐大的醫療與商業版圖；而第二代則在兩種文化夾縫中，長出了獨特的「台裔巴西人」身分。這不僅是關於生存的故事，更是一場關於身份認同、文化衝擊與融合的精彩旅程。
+TVBS 採訪團隊深入聖保羅，記錄這場關於傳承、衝突與重生的跨世代對話。</p>
+    </div>
+
+    <section id="highlights" class="container">
+        <h2 class="section-title">專題章節</h2>
+        <div class="highlights">
+            <div class="card">
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/003366/fff?text=Taste+of+Taiwan');"></div>
+                <div class="card-content">  
+                    <h3>01. 舌尖上的台灣味</h3>
+                    <p>從「提包」走街到米其林推薦，台裔二代如何改良刈包，征服巴西人的味蕾？</p>
+                    <a href="#chapter1" class="btn-read">閱讀更多</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://placehold.co/600x400/cc3300/fff?text=Hospital+YES');"></div>
+                <div class="card-content">
+                    <h3>02. 紅磚區的白色巨塔</h3>
+                    <p>葉倫群醫師行醫半世紀，堅持「來者不拒」。但在高昂醫保下，老僑胞卻面臨無奈的歸鄉潮。</p>
+                    <a href="#chapter2" class="btn-read">閱讀更多</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://placehold.co/600x400/333/fff?text=New+Identity');"></div>
+                <div class="card-content">
+                    <h3>03. 台巴混血世代覺醒</h3>
+                    <p>不只是生存，更要創造意義。烘焙師、藝術家與網紅，如何走出「第三條路」？</p>
+                    <a href="#chapter3" class="btn-read">閱讀更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article id="chapter1" class="article-section">
+        <div class="container article-content">
+            <div class="article-header">
+                <span class="tag">第一章</span>
+                <h2>味蕾的冒險：當台灣「Q」遇上巴西「脆」</h2>
+                <p class="article-subtitle"> 1980年代大批台灣人，遠赴 2 萬公里外的南美洲，在巴西從事進出口貿易、
+或開創製造業王國。經過40多年的時代沖刷，仍屹立不搖的人，靠著台灣
+軟實力雄霸一方。台裔第二代「林秉宏」，在聖保羅開了兩間台菜餐廳，賣
+刈包、鹹酥雞、滷肉飯等台味小吃，成功征服巴西人的胃，還獲得米其林推
+薦。TVBS特派記者許岱軒、朱光弘帶你去巴西一起了解。</p>
+            </div>
+
+            <div class="content-block">
+                <h3>移民心臟：聖保羅市東方街</h3>
+
+                <p>聖保羅是巴西經濟的心臟，也是台灣人在南美最重要
+的經商據點之一。在聖保羅市中心，有這麼一條「東
+方街」。
+首先映入眼簾的是街道兩側的「和風街燈」以及矗立
+的鳥居牌樓。隨處可見亞裔面孔與漢字招牌，彷彿穿
+越任意門回到亞洲。
+它的官方名稱是自由區（Bairro da Liberdade）。這
+裡不僅是全拉丁美洲最大的亞裔社區之一，更是無數
+日裔、台裔、韓裔和華裔移民在異鄉尋求慰藉與希望
+的「庇護所」。
+雖然早期多為日本移民定居，但隨著時間推移，這裡
+融合了多種東方文化。對於身在南美洲的亞洲人來
+說，這裡提供了強烈的歸屬感。</p>
+
+<figure class="photo-block">
+    <img src="images/東方街.jpg" alt="東方街街景">
+    <figcaption> 台灣人在南美最重要經商據點之一「東方街」。</figcaption> 
+</figure>
+
+
+<figure class="photo-block">
+    <img src="images/東方街1.jpg" alt="東方街人群街景">
+    <figcaption> 東方街周末聚集來各自地的民眾。</figcaption> 
+</figure>
+
+
+                <p>早期的台灣移民多以開「禮品店」為生。從1975年到1980年代開始，台灣移民會將東
+方禮品帶到巴西。在進口封閉的年代，他們發揮了堅韌的拓荒精神，早期甚至有人實
+行「提包」作戰：提著裝滿中國扇子、飾品的包包，挨家挨戶敲門推銷，「那時候的人
+情味比較重 」。這些辛苦「提包」的移民存了錢後，便轉身在自由街一帶開起禮品店
+或批發店。</p>
+
+                <p> 在巴西46年的台商葉莉煒 Viviane在描述當時𡚒鬥的艱辛，
+早當年大家剛來時手上沒多少本錢，就
+靠『提包』維生，帶著一個包包裝滿從
+台灣帶來的小商品，一戶戶敲門販售。
+因為當時巴西仍未開放進口、市場相當
+封閉，這些台灣貨反而成了現金來源。
+很多早期移民就是靠這樣四處跑、靠自
+己的雙腳與苦力，一點一滴存到第一桶
+金，最後才有能力開起店面。</p>
+
+<figure class="photo-block">
+    <img src="images/東方街台商.jpg" alt="記者和台商訪問">
+    <figcaption> 在巴西46年的台商葉莉煒說明昔日𡚒鬥史。 </figcaption>
+</figure>
+
+                <p> 葉莉煒指出，在1970年代許多剛到巴西的台灣移民
+對當地習慣不熟，又急需一份臨時工
+作，大家第一站往往都是到『萬里餐
+廳』，去找老闆問能不能僱用。老闆本身
+是台灣人，非常願意接納新移民，許多
+人在巴西的第一步、第一份工作都是從
+那裡開始的。
+對離鄉的人來說，那裡也像一個小小的
+家鄉，大家彼此聊天、互相安慰打氣，
+在異地找到了一份溫暖的依靠。 </p>
+    
+
+                <h3>口感戰爭：馴服巴西人的味蕾</h3>
+                <p>聖保羅的自由街是亞洲飲食的集中地，從壽司、拉麵到台式滷肉飯，應有盡
+有，許多台灣人開超市或雜貨店，販售東方食品、醬油、泡麵等商品，滿足了當地人
+對亞洲口味的喜愛。
+每逢週末，自由街小攤販林立，販售著章魚燒、刈包、春捲、炒麵等街頭小吃，不僅
+受到觀光客歡迎，那熟悉的味道，讓異鄉人很自然錨定了歸屬感。</p>
+                <p> 台人在巴西開台菜餐廳，賣刈包、鹽酥雞、炸茄子，從餐車到現在兩間
+店，獲米其林推薦，用台灣味道征服世界各地，TVBS 記者許岱軒也親自帶大家去探究，其中有些店家更是第二代經營，
+第二代重現「母親記憶的味道」，替母親解思鄉之情，還曾帶巴西廚師
+訪台「尋台味」。</p>
+                <p> 聖保羅市區兩間名字獨特、充滿生命力的餐廳「媽圃」
+（Mapu）與「哎呦」（Aiô）正改變著巴西老饕們對
+亞洲美食的想像。
+他們的招牌菜包括刈包、滷肉飯、蔥油餅、炸茄子、
+鹹酥雞，這些台灣人熟悉的街頭小吃，在2萬公里外
+的南美大陸上原汁原味重現，征服吃慣起司與烤肉的
+巴西人胃口，更成為聖保羅華裔解思鄉之情的安慰
+劑。
+「Mapu」是家常台灣小吃的嘗鮮櫥窗，並曾獲得
+「最實惠的餐廳」獎項；「Aio」餐酒館主打創意精緻
+台菜，獲得米其林指南推薦。
+這兩間相鄰的餐廳，都是由台裔第二代林秉宏
+（Duilio Lin）創立，憑藉其獨特的風味組合與創新的
+菜餚，打開知名度，每到用餐時間一位難求。</p>
+
+<figure class="photo-block">
+    <img src="images/米餐.jpg" alt="Mapu">
+    <figcaption> Mapu獲「最實惠的餐廳」獎項。 </figcaption>
+</figure>
+
+<figure class="photo-block">
+    <img src="images/米餐1.jpg" alt="Aio">
+    <figcaption> Aio 獲「米其林指南」推薦。 </figcaption>
+</figure>
+
+<figure class="photo-block">
+    <img src="images/米其林1.jpg" alt="Aio">
+    <figcaption> Aio 和Mapu 獲獎一覽表。 </figcaption>
+</figure>
+
+<h3>「味覺爆炸」獨特體驗 </h3>
+<p>饕客形容為帶來「味覺爆炸」的感受。其中，雞肉刈包是許多人的「第一選擇」。顧客
+稱讚刈包的雞肉醬汁結合了胡椒與甜味，「混合得非常完美」，加上黃瓜提供的酥脆
+感，以及「非常鬆軟」的麵包體，造就了這道經典美味。
+另一道深受喜愛的炸茄子，因其醬汁與口感「非常不同於」顧客以往嘗過的所有食
+物，被形容為「當我們咬下去時，它會在嘴裡爆炸」。此外，番茄沙拉因使用了台灣
+醋、並將豆子以兩種不同質地呈現，口感令人驚艷。年輕顧客則對炸雞的「酥脆又
+辣」、以及「多汁且酥脆」的蔥油餅 讚不絕口。
+多位顧客指出，在享用過這裡的美食後，他們「真的想去台灣」，親自品嚐當地的所有
+風味。他們認為，儘管台灣與巴西距離遙遠，但透過這間餐廳，他們得以「體驗到一
+點點台灣文化」。</p>
+
+<h3>從啤酒屋發跡的「台菜巴西化」之旅</h3>
+<p>媽圃的起點，要從2017年的餐車冒險說起。他們最初在啤酒屋前，用小爐子賣炸雞和
+刈包。台灣的鹹酥雞在這裡意外受歡迎，因為巴西本身也有炸雞文化，「這個比較容易
+賣。」 但傳統刈包卻是挑戰。巴西人習慣吃烤麵包，對那種蒸出來、又白又軟的麵皮
+感到陌生。為了讓當地人接受，他們只能將刈包比喻為「台灣漢堡」。
+要馴服異國味蕾，免不了調整或妥協。林秉宏發
+現，巴西人喜歡更鹹、更重口味的料理，而且
+「比較不甜」，與現今台灣人講究清淡養生、甘
+甜提味的習性不同。</p>
+<p>最大的調整在於招牌刈包的內餡。台灣人鍾愛五
+花肉帶皮帶肥肉的「Q」彈口感。然而他們發
+現：「很多巴西人不喜歡吃肥肉，他們覺得有一
+點噁心。」</p>
+
+<figure class="photo-block">
+    <img src="images/招牌刈包.jpg" alt="刈包的畫面">
+    <figcaption> 改良招牌刈包揚名巴西。 </figcaption>
+</figure>
+
+<figure class="photo-block">
+    <img src="images/肉飯.jpg" alt="改良版肉燥飯">
+    <figcaption> 改良版肉燥飯深得客人喜歡。 </figcaption>
+</figure>
+
+
+
+ <ul>
+                    <li><strong>台灣派 vs. 巴西派：</strong>台灣人追求「Q彈」與「鹹甜平衡」；巴西人則偏好「重鹹」、「酥脆」以及「味道在嘴裡瞬間炸開」的衝擊感。</li>
+                    <li><strong>肥肉的妥協：</strong>巴西人看到肥肉會感到視覺不適，且不習慣軟爛口感。林秉宏將刈包改良，推出「純肉絲」與「雞肉」版本，保留豬油香氣但去除肥肉，被當地人譽為「台灣漢堡」，成功一炮而紅。</li>
+                </ul>
+
+
+<figure class="photo-block">
+    <img src="images/舌尖文化.jpg" alt="兩國飲食差異">
+    <figcaption> 台灣和巴西舌尖文化差異。 </figcaption>
+</figure>
+
+
+<p>於是他們推出了純肉絲的刈包，其實就是把五花
+肉細切、保留豬油的香醇。另有雞肉版刈包，避
+免完整肥肉出現餐桌上的視覺不適。果然「台灣
+漢堡」從此一炮而紅。</p>
+
+
+<p>2019年開業的媽圃，很快打響名號，甚至被媒
+體評為「最實惠的亞洲餐廳」。接著在2023年，
+林秉宏團隊推出了第二間餐廳「哎呦」（Aiô）。
+「哎呦」在葡萄牙文中意為「驚喜」，這也是母
+親常掛在嘴邊的口頭禪。料理走更為精緻的路
+線，融入更多大膽創新嘗試，又保留熟悉台灣味
+底蘊。正如他們所說，哎呦的菜色「有台灣的靈
+魂，但也有我們的故事。」</p>
+
+ <h3>餐廳取名是給母親的情書</h3>
+<p>這兩間餐廳更是一封由台裔第二代寫給母
+親、寫給故鄉的深情「舌尖情書」。「媽圃」
+這個名字背後的故事，充滿了台灣家庭特
+有的溫暖和幽默。
+創辦人林秉宏解釋，這個名字源於小時候
+他與姐姐對媽媽和爸爸的私下暱稱。如
+今，它被賦予了新的意義：「媽圃」意指
+「母親的菜譜」或「母親的花園」，象徵著
+對第一代移民母親林媽媽（Jasmine）味
+道的承襲與思念。
+林秉宏提到，東方文化中，愛情的表達往往藏在細節裡。「我覺得到臺灣的那個方式怎
+麼去表達那個愛，就是用『你已經吃飯了嗎？』」他認為，比起直接說「我愛你」，為
+家人準備的一桌好菜，才是母親最真切的愛。「那個食物就是代表媽媽的愛。」正是這
+份對媽媽味道的執著，促使他決心將這份溫暖推向巴西大眾。</p>
+
+
+<figure class="photo-block">
+    <img src="images/母子照.jpg" alt="林秉宏和母親">
+    <figcaption> 林秉宏和母親暢談創業過程。 </figcaption>
+</figure>
+
+<p>林媽媽回憶起早年剛來巴西的艱辛。當年她追隨先生前來，先生受邀養蝦，後來又與
+朋友種植洋菇。那段日子十分辛苦，「早上四五點就要起來」，用藥水洗切洋菇時，她
+的手常常裂開。
+後來菇房遭遇祝融之災，生計遭逢巨變。他們轉而進入一間中國鞋廠工作，經濟狀況
+才漸漸穩定下來。
+林爸爸在林秉宏年幼時便離世，林媽媽獨自扛起姊弟兩人的養育重擔，經歷了人生的
+起伏，林媽媽家中始終飄著台灣菜的香氣，她常煮許多台灣菜宴請朋友，炒菜、炒飯
+樣樣不缺。</p>
+
+<figure class="photo-block">
+    <img src="images/母親.jpg" alt="林秉宏母親年輕工作照">
+    <figcaption> 林秉宏母親年輕時在巴西打拚日子。 </figcaption>
+</figure>
+
+
+<ul>
+    <li>
+        <strong>聖保羅台菜餐廳創辦人 林秉宏:</strong>
+        我在巴西出生長大，但我覺得台灣人表達愛的方式很特別。像是那句『你吃飽了嗎？』其實就是在說『我愛你』。那是台灣很溫柔、很日常的關心方式。
+    </li>
+    <li>
+        <strong>林秉宏之母 Jasmine:</strong>
+        我們東方人不像巴西人那樣動不動就說『我愛你』。在我們的文化裡，母親的愛更多是透過食物表現——孩子喜歡吃什麼，媽媽就煮什麼。對我們來說，食物本身就是愛的象徵。
+    </li> 
+</ul>
+
+<h3>林媽媽支持 走進廚房 </h3>
+<p>林秉宏並非一開始就打算進入餐飲業，當他決定放棄工程師身份，轉而開創小吃事業時，林媽媽不免有疑問：「你早要做，你幹嘛要讀大學，浪費多少四年、五年的時間。」但在林秉宏堅持下，林媽媽最終選擇了支持與鼓勵，讓他放手去做。其實一開始，他們都沒有百分之百的把握。「當時我們母子做好最壞打算，想著若失敗，還有哪些退路。」</p>
+
+<figure class="photo-block">
+    <img src="images/廚房照.jpg" alt="林秉宏廚房照">
+    <figcaption> 林秉宏在廚房照進出打點。 </figcaption>
+</figure>
+
+<p>林媽媽始終是這家餐廳的「靈魂人物」，負責監督與試菜，是菜單的最終把關者。當被問及是否會因為口味傳統與兒子的創新產生衝突時，林媽媽已經能妥協：「我在巴西生活四十年了，很清楚這裡的口味和台灣有差異。做生意最重要的是賣給巴西人，所以不能一味堅持自己的味道。」她更認為，老一輩不應太干涉年輕人的創業，應該多尊重，讓他們放手去做。</p>
+<p>對於這一切成就，林媽媽有著最溫暖的期許。她對林秉宏最大的心願，不是金錢或成就，而是希望他能過得快樂：「我對他的期待，就是他要生活得很快樂。不要為了想做什麼事情，給自己太大的壓力。」</p>
+
+
+<h3>帶2位合夥主廚 遠赴台灣「尋台味」</h3>
+<p>林秉宏的夢想並非獨自完成。他的合作夥伴，主廚 Caio Yokota 和 Victor Valadão ，
+都是在廚藝學校相識，並曾在米其林星級餐廳歷練過的頂尖味覺藝術家。他們被這份
+充滿情感的台菜深深吸引。
+Caio 回憶第一次吃到刈包時，完全被征服：「天哪，這太不可思議了。如果這是在餐
+廳裡，一定會非常有名。」 Victor 則認為，台灣菜的味道充滿驚喜，「那些味道混合
+在一起，取得了完美的平衡。」</p>
+
+<figure class="photo-block">
+    <img src="images/合顆人.jpg" alt="合顆人廚房照">
+    <figcaption> 聖保羅台菜餐廳合夥人 Caio Yokota (日裔) & Victor Valadão。 </figcaption>
+</figure>
+
+<p>對這兩位巴西主廚來說，台灣味是一段漫長的學習旅程。一開始，他們只能透過書本
+研究，做出來的菜餚，林媽媽試吃後說：「味道不錯，但嘗起來不像台灣。」
+光是想像當然不夠，林秉宏為了讓兩位土生土長的巴西人「懂台味」，非得要到台灣嘗
+遍街頭小吃、家常料理，要先能夠「轉譯」、才能創造自己的獨特「演繹」。
+踏上台灣土地之後，果然有了「頓悟」。他們發現了台灣美食中獨特的「Q」（嚼勁）
+口感，這是在巴西料理中少見的。</p>
+
+<figure class="photo-block">
+    <img src="images/改良菜.jpg" alt="改良菜廚房照">
+    <figcaption> 改良菜別有特色。 </figcaption>
+</figure>
+
+<figure class="photo-block">
+    <img src="images/改良菜1.jpg" alt="改良菜1廚房照">
+    <figcaption> 改良菜別有特色。 </figcaption>
+</figure>
+
+
+ <h3>打開台灣文化走向世界之路</h3>
+<p>這趟旅程，從一塊平凡的鹹酥雞、一個熱騰騰的刈包開始。而「台灣味」不只是舌尖
+上的刺激，林秉宏創造多層次立體展演。「哎呦」餐廳醒目的玻璃落地窗、白色與暖色
+調裝潢。耳邊不時傳來台灣流行歌曲、膳檯上擺放台北101的裝飾小物、酒單上「日月
+潭」、「龍山」、「新社古堡」熟悉的地名，讓人有種置身台北中山站巷弄餐館的錯覺。</p>
+
+<p>林秉宏計畫在明年開設台灣風格的「麵包店」。長期規劃則包括台式麵食館（專注牛肉
+麵、雞蛋麵等）、台式飲料店（如珍珠奶茶），預計每兩到三年推出一個新的餐飲概念
+或分店。</p>
+<p>林秉宏的核心信仰是，若顧客吃完有「想去台灣」的念頭，就是達成非常重要的目
+標。「我們很想讓大家分清楚，台灣和泰國的差別在哪裡。」
+林秉宏懷揣更遠大的夢，要讓「台灣」這有溫度的文化概念，不僅令人難忘，更要再
+三回味。</p>
+
+
+    <div class="content-block">
+        <div class="video-title">🎬 完整專題報導：巴西刈包的逆襲</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div> </article> 
+
+
+                <h3>移民起點：「提包」歲月</h3>
+                <p>早期的台灣移民多以開「禮品店」為生。從1975年到1980年代開始，台灣移民會將東
+方禮品帶到巴西。在進口封閉的年代，他們發揮了堅韌的拓荒精神，早期甚至有人實
+行「提包」作戰：提著裝滿中國扇子、飾品的包包，挨家挨戶敲門推銷，「那時候的人
+情味比較重 」。這些辛苦「提包」的移民存了錢後，便轉身在自由街一帶開起禮品店
+或批發店。</p>
+<p> 
+早當年大家剛來時手上沒多少本錢，就
+靠『提包』維生，帶著一個包包裝滿從
+台灣帶來的小商品，一戶戶敲門販售。
+因為當時巴西仍未開放進口、市場相當
+封閉，這些台灣貨反而成了現金來源。
+很多早期移民就是靠這樣四處跑、靠自
+己的雙腳與苦力，一點一滴存到第一桶
+金，最後才有能力開起店面。</p>
+<figure class="photo-block">
+    <img src="images/提包文化.jpg" alt="提包文化的圖卡">
+    <figcaption> 「提包」作戰是昔日台灣移民成功的策略。 </figcaption>
+
+</figure>
+
+            </div>
+        </div>
+    </article>
+
+<article id="chapter2" class="article-section">
+        <div class="container article-content">
+            <div class="article-header">
+                <span class="tag">第二章</span>
+                <h2>紅磚區裡的白色巨塔：醫者的仁心與鄉愁</h2>
+                <p class="article-subtitle">萬里之外的守護，與老僑胞無奈的歸鄉路</p>
+                <p>巴西聖保羅郊區，有一棟開業5年的嶄新醫院，最多可容納超過200個病
+                床，規模相當於台北市的和平醫院。這座「葉氏醫院」，是由台灣人獨資建
+                立，創辦人「葉倫群」在巴西行醫將近半個世紀，以媲美台灣的醫療水準，
+                服務當地的勞工階級。不過巴西私人醫療保險非常昂貴，59歲以上長者，
+                一年保費起碼台幣30萬元，因此很多打拼大輩子的台商，不願當子女的負
+                擔，退休後獨自回台灣生活。TVBS特派記者許岱軒、朱光弘也去拜訪這位醫者。</p>
+            </div>
+
+            <div class="content-block">
+                <h3>建中生的拓荒夢</h3>
+                <p>在聖保羅郊區伊塔佩維（Itapevi）的紅磚房貧民區中，矗立著一座潔白新穎的現代化建築，那是台灣人葉倫群醫師獨資創立的「葉氏綜合醫院」（Hospital Yes）。1975年，葉倫群從建國中學畢業後隨家人移居巴西，從一句葡文都不會到醫學院畢業，他始終懷抱著改善當地醫療的夢想。</p>
+                <p>為了提供更準確的診斷，他在1991年大膽引進了聖保羅市郊第一部電腦斷層掃描儀（CT），這在當時是極為罕見的設備。如今，他的醫院擁有234張病床，規模相當於台北市的區域醫院。</p>
+
+                <figure class="photo-block">
+                    <img src="hospital_entrance.jpg" alt="葉氏綜合醫院外觀">
+                    <figcaption>位於貧民區中的葉氏綜合醫院，是當地重要的醫療支柱。</figcaption>
+                </figure>
+
+                <div style="background:#f9f9f9; padding:20px; border-radius:5px; margin: 30px 0;">
+                    <h4 style="color:#003366; margin-top:0;">🔎 小檔案：葉氏綜合醫院</h4>
+                    <p>葉氏綜合醫院（Hospital Yes） 位於巴西聖保羅州 Itapevi 市，由台灣僑胞葉倫群伉儷斥資興建，於2020年正式開幕，是當地少數由台灣人創立的大型醫療機構。</p>
+                    <ul style="padding-left:20px; margin-bottom:0;">
+                        <li><strong>規模設施：</strong>醫院佔地約4,000平方公尺，建築面積達20,000平方公尺，設有234張病床。涵蓋內科、小兒科、心臟科、婦產科、皮膚科、骨科與檢驗科等多個科別，並配備現代化醫療設備。</li>
+                        <li><strong>社會責任：</strong>院方積極參與公益與地方合作，在新冠疫情期間捐贈醫療物資、協助檢測與照護重症病患，獲得地方政府高度肯定。行政總監柯家玲醫師更榮獲 Itapevi 市政府頒發榮譽市民證書。</li>
+                    </ul>
+                </div>
+
+                <p>巴西聖保羅往西約一小時車程的伊塔佩維（Itapevi）市，勞工階級蝸居的磚造平房櫛比鱗次，有如一張覆蓋在起伏小丘陵間的破舊紅毯。這裡矗立著一座扞格不入、潔白新穎、現代化的醫療機構。</p>
+                <p>葉氏綜合醫院（Hospital Yes），這座最多容納超過兩百個床位、規模相當於台北市和平醫院等級的醫院，以媲美台灣的醫療水準服務巴西藍領階級。一切源於來自台灣的拓荒者：葉倫群院長50年來在巴西土地上，對醫療理想的堅定實踐。</p>
+
+                <figure class="photo-block">
+                     <img src="hospital.jpg" alt="葉氏綜合醫院外觀">
+                    <figcaption>位於貧民區中的葉氏綜合醫院，是當地重要的醫療支柱。</figcaption>
+                </figure>
+
+                <h3>信任始於每次問診</h3>
+                <p>平日葉倫群固定有門診，早早就到醫院忙進忙出，一有空他就到病房巡視。「普莉希拉，早安，你好嗎？其實應該說午安了對吧？」這天他正替剛完成子宮手術的病患普莉希拉聽診，確認術後狀況。「心臟很好。心音正常。一切都很好。」</p>
+                <p>普莉希拉與先生費南多，從遠達34公里的卡雅馬（Cajamar）來到葉氏醫院就醫，是透過親友介紹而來。普莉希拉的手術並非尋常，她患子宮內膜異位症（Endometriose），病灶黏得非常厲害，甚至與腸子都緊密相黏，挑戰性極高。</p>
+                
+                <div class="quote">
+                    「妳的傷口現在只有一點瘀青，但每個星期都會改善。」<br>
+                    「是，我很滿意。」
+                </div>
+
+                <p>普莉希拉的手術相當順利，幾乎沒有失血。預計當天下午或隔天就能出院。葉醫師叮囑普莉希拉要按時到回診，要親自追蹤她的傷口恢復狀況。丈夫費南多向葉醫師道謝：「我們感謝您來到巴西。像您這樣的人確實帶來了改變。」他還問起醫師高齡仍在工作是否需要休息時，葉醫師解釋，他每週仍保持高頻率的看診與手術安排，視為一種「樂趣和挑戰」。</p>
+
+                <figure class="photo-block">
+                     <img src="doctor_rounds.jpg" alt="葉倫群院長在葉氏綜合醫院巡病房">
+                    <figcaption>葉倫群院長每天巡病房，因為相信信任始於每次問診。</figcaption>
+                </figure>
+
+                <p>說起印想最深刻的病患，葉倫群想到一位年僅29歲的女性病患，因飲食不節制導致冠狀動脈嚴重阻塞，心臟功能不到25%，全身浮腫。葉氏醫院請來權威心臟科專家，進行了複雜的繞道手術。手術後，這位年輕的太太不僅恢復良好，還瘦了15到20公斤，徹底改變了飲食習慣。</p>
+                <p>另一位41歲的太太，她因為呼吸困難，在十天內連找了三家醫院，都被當作普通感冒處理。直到她來到葉氏醫院，才被診斷出是致命的「肺部血管栓塞」，葉院長馬上將她送進加護病房，救回一命。她曾因流彈波及受到槍傷，也是醫院治好她。</p>
+                <p>一踏入醫院大廳，很難不被吸引目光。掛號處懸掛著一幅鮮明躍動的畫作，名為「車水馬龍」，描繪醫院忙著拯救蜂擁而至的病患，救護車不斷把病患送來的景象。這是一份勝過千言萬語的謝禮。</p>
+
+                <figure class="photo-block">
+                     <img src="painting.jpg" alt="醫院內的油畫">
+                    <figcaption>掛號處懸掛著一幅鮮明躍動的畫作，名為「車水馬龍」。</figcaption>
+                </figure>
+
+                <p>「有位家屬，在病患手術順利康復後，出於感恩而親自創作並送給醫院的」。葉倫群欣慰又自豪地介紹：「他不用錢、不用言語來表達，而是用這幅畫。我覺得非常有意義。」葉倫群在巴西行醫近半個世紀，這就是他追求的最高榮耀。</p>
+
+                <h3>建中生遠赴巴西行醫</h3>
+                <p>目前兼任巴西台灣商會會長的葉倫群，1975年建中畢業，一句葡萄牙文都不會，便隨家人移居巴西。靠著農家子弟刻苦精神，唸到醫學院畢業。結婚後不久的1988年，首先在聖保羅創立了一間小小的診所。不僅是他行醫的場所，更在這個小診所裡親自接生自己的孩子。</p>
+                <p>漸漸葉醫師體認到，在聖保羅市的窮苦西郊，醫療資源是多麼匱乏。為了提供更快速、更準確的診斷，他在1991年做了一個大膽的決定：引進了聖保羅市郊第一部電腦斷層掃描儀。彼時，一部電腦斷層掃描儀約需30萬美元。「靠電腦斷層，不需顯像劑就可以看到哪裡出血。」對腦溢血或骨折的病患來說，快速診斷往往是生死關鍵。</p>
+
+                <figure class="photo-block">
+                     <img src="ct_machine.jpg" alt="醫院儀器">
+                    <figcaption>醫院的電腦斷層掃描儀約需30萬美元。</figcaption>
+                </figure>
+
+                <h3>從小診所 到自己蓋醫院</h3>
+                <div class="quote">
+                    <strong>葉氏醫院創辦人 葉倫群：</strong><br>
+                    我們一家是在 1975 年離開台灣的。當時台灣和中國大陸關係緊張，父親希望我們到巴西尋找新的出路...
+                    我之所以要蓋醫院，就是希望病人來到我們這個系統，不管大病小病都能在這裡得到完整的照顧。
+                </div>
+
+                <p>從診所到醫院的轉折，只是一個單純的想法：必須建立一個完整的醫療系統。當時即便在聖保羅這樣的大都會，也沒有多餘的診療資源分給廣大勞工階級。</p>
+                <p>葉倫群認為，非得先建立完整的診斷體系，才能讓病患好好的治療。「這是先決條件，讓病患『大病小病我都能吸收』，無須在病痛時，還必須拿著診斷書，四處奔波尋求後續的治療。」後來即便創辦配備電腦斷層掃描的診療中心，他仍決心建立一座能治百病的醫院。</p>
+                <p>2002年，葉倫群如願創立了第一間「中巴醫院」，地點在聖保羅以西約20公里的奧薩斯科（Osasco）。這座醫院擁有84個床位，並且裝設核磁共振（MRI），甚至還能進行心導管手術。在當時的附近城市，這些設備與技術都屬於創舉。</p>
+
+                <h3>疫情下的生死抉擇</h3>
+                <p>到了2015年，葉倫群做出了另一個重大的決定：他將經營有成、服務完善的中巴醫院，以高價賣給了國際醫療集團。但他很快便在聖保羅往西的伊塔佩維（Itapevi）市買下了一塊約4,000平方公尺的土地，興建一座更為現代化、規模更宏大的葉氏綜合醫院，於2020年3月正式落成。</p>
+                <p>「這裡廣大的勞動人民，需要我們的幫助。」然而前路艱難，剛開幕就面臨危機。COVID-19疫情爆發，巴西隨即進入全面封鎖。在醫院擔任行政總監的妻子柯家玲，回憶往事語帶沉重：「那時候缺少藥物、缺少機器、缺少人工，什麼都缺少；大部分的病人都需要加護病房。」當時一台呼吸機的價錢從10萬巴西幣(約59萬台幣)，飆漲到30萬(約177萬台幣)。醫院不得不面臨成本與救人的兩難抉擇。</p>
+
+                <figure class="photo-block">
+                     <img src="saopaulo_view.jpg" alt="聖保羅的上空">
+                    <figcaption>葉醫生照顧聖保羅廣大的勞動人民。</figcaption>
+                </figure>
+
+                <p>疫情最嚴重的2020年和2021年，醫院沒有停業、沒有縮減營業規模，葉院長堅持「來者不拒，來者不懼」，接收大量病患。最困難的時候，醫院加護病房50床位爆滿，無奈仍有許多病人，在急診等不到床位而病逝。</p>
+                <p>五年走來，葉氏醫院挺過了疫情，建立了口碑、穩住了能帶來穩定收入的保險客源。現今醫院97%的病患都來自保險轉派。醫院越來越忙碌，2020年頭幾個月只看了106例病症，2024年全年服務9.4萬名病患，預計2025年突破11.5萬人次。住院人數也比去年增加了60%到70%。</p>
+
+                <h3>妻女是最務實的後盾</h3>
+                <p>葉氏醫院的成功，是一家人的耕耘。葉倫群的太太柯家玲擔任行政總監，他們的女兒葉凱琳，本是耳鼻喉專科醫師，半路出家攻讀行政管理，現在協助父母打理醫院大小事務。葉凱琳剛到醫院的震撼教育，就是那場始料未及的疫情。她形容那段時期是「這一輩子永遠沒有辦法想像得到的。」初生之犢就深刻徹悟，書本教的是一回事，真實世界情況遠超出了自己的控制 。</p>
+                <p>身為醫院管理者的柯家玲，必須掌控所有細節，甚至連病患在醫院花多久時間，精算到幾分鐘的數據，在她辦公室的電腦監控系統一目了然。只要病人在醫院等待過久，系統就會推送通知給她，她必須立刻查明哪個環節卡住了，再改進流程。</p>
+                <p>丈夫的行醫理想可以無限大，但現實中，「就算一根呼吸管也有成本」。即便柯家玲有行政壓力，也認同葉倫群的把病人放在第一的信仰。「我們的使命就是給病人安全的治療與安全的環境。…要保有人情味，必要時懂得通融、保持彈性。」</p>
+                <p>醫院每天面臨的兩難抉擇，源自巴西的醫療保險體制。沒有人人負擔的起的全民健保，只有昂貴的私人醫療保險。病患開刀、住院花費，都需要保險公司給付授權。「有時候病人很嚴重，等不到授權，你必須冒險先讓他開刀。有時候之後保險可能不給付。」</p>
+
+                <figure class="photo-block">
+                     <img src="doctor_interview.jpg" alt="葉醫生與親友">
+                    <figcaption>葉醫生細說自己創立醫院的過程。</figcaption>
+                </figure>
+
+                <div class="quote">
+                    「很多台灣人在巴西一輩子辛苦工作，但退休時卻無法有尊嚴地生活，因為醫療保險太貴。」—— 台裔保險業者 Orlando Liang
+                </div>
+
+                <h3>醫保太貴 僑胞退休後被迫孤身返台</h3>
+                <p>巴西人把醫療保險視為奢侈品，是房子、車子之後，「第三渴望」擁有的安身保障。在巴西保險業服務超過20年的台裔後代歐蘭多（Orlando Liang）指出，巴西保費相對個人收入「非常非常昂貴」。以59歲為例，購買一份品質較好的醫險保單，每月大約需要800美元。折算每年保費約30萬台幣，非常沉重。</p>
+                <p>正因如此，許多在巴西打拼了一輩子的台灣僑胞，到了退休年紀，不得不選擇回到親戚所剩無幾的台灣，接受治療照護，不願當子女的負擔。以聖保羅來說，最盛時期超過5萬台灣人聚居，如今只剩約一半還在當地。</p>
+
+                <figure class="photo-block">
+                     <img src="insurance_guy.jpg" alt="台商">
+                    <figcaption>醫療保險業者Orlando Liang指出，巴西醫保很貴。</figcaption>
+                </figure>
+
+                <div class="quote">
+                    <strong>台裔第二代 醫療保險業者 Orlando Liang：</strong><br>
+                    這讓我感到非常挫折、非常心痛。因為很多台灣人在巴西一輩子辛苦工作，但退休時卻無法有尊嚴地生活，因為醫療保險太貴。我們很多客戶不得不回台灣，才有辦法過較好的退休生活。
+                </div>
+
+                <p>而葉倫群院長認為，僑胞退休回鄉是一種「自然的傾向」。「在巴西，看病一般都要60到100美元(1800至3100台幣)，單次門診確實比較貴，某些檢查也比台灣貴。」他指出，台灣醫療技術是世界一流，健保制度比巴西好很多，語言又通，仍是無可取代的優勢。</p>
+                <p>對仍在巴西打拼的僑胞來說，葉氏醫院是看病治療的首選，不僅媲美台灣的醫療水準，更重要的是，在這裡能感受到，台灣人無論走到世界多遠的角落，那股不曾冷卻的人情味。</p>
+
+                <div class="video-container">
+                    <div class="video-title">🎬 深度訪談：紅磚區的台灣醫生</div>
+                    <iframe src="https://www.youtube.com/embed/您的影片ID" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+
+    <article id="chapter3" class="article-section">
+        <div class="container article-content">
+            <div class="article-header">
+                <span class="tag">第三章</span>
+                <h2>文化混血：第二代的「解構與重建」</h2>
+                <p class="article-subtitle">不只是生存，台裔巴西人的身分覺醒</p>
+            </div>
+
+            <div class="content-block">
+                <h3>職場文化的衝擊：責任制 vs. 準時下班</h3>
+                <p>不同於父執輩為了「生存」而創業，台裔第二代開始追求熱情與社會意義。烘焙師郭憶憶（Anita）曾在台灣吳寶春麵包店實習，習慣了台灣職場「做完才走」的責任制。當她回到巴西接手家族事業時，卻經歷了劇烈的文化衝擊。</p>
+                <p>「我要求巴西甜點師下午做不一樣的甜點，對方竟回答：『我四點就要走了，明天再做』。」郭憶憶坦言，起初她非常不適應，但在母親的提點下，她學會了調節，融合台灣的勤奮與巴西重視生活的樂天態度。</p>
+
+                <figure class="photo-block">
+                    <img src="https://placehold.co/800x500/eee/555?text=Anita+Bakery" alt="郭憶憶與她的烘焙坊">
+                    <figcaption>郭憶憶將台灣的烘焙技術帶回巴西，但也學會了適應當地的職場文化。</figcaption>
+                </figure>
+
+                <h3>撕下「模範少數族裔」標籤</h3>
+                <p>內容創作者 Leo Hwan 則透過影片，反思亞裔在巴西社會的處境。他分享了一次深夜與白人朋友在街頭拍攝動作片道具槍的驚險經歷。當警察持槍包圍他們時，卻因為看到他是「亞洲人」而放下了戒心，警察甚至說：「你們看起來不像罪犯」。</p>
+                <p>這句話讓他深刻意識到，亞裔勤奮、順從的形象雖然帶來了某種「特權」，但這也是一種刻板印象，無意間助長了社會對其他族群的不平等。他認為，第二代不應再被迫於「台灣人」或「巴西人」之間二選一。</p>
+
+                <figure class="photo-block">
+                    <img src="https://placehold.co/800x500/eee/555?text=Leo+Hwan" alt="Leo Hwan 採訪畫面">
+                    <figcaption>Leo Hwan 透過 YouTube 頻道，大膽討論身分認同與種族議題。</figcaption>
+                </figure>
+
+                <h3>橘色的希望：第三種身分</h3>
+                <p>正如 Leo 所言：「我們創造出了一種新的身份，它是巴西的，但也帶著台灣元素。」他們就像畫作中的橘色，既非黑也非白，而是在巴西這塊土地上，融合出的第三種充滿希望的色彩。</p>
+
+                <div class="video-container">
+                    <div class="video-title">🎬 專題結語：尋找第三種顏色</div>
+                    <iframe src="https://www.youtube.com/embed/您的影片ID" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="credits">
+                <span>記者：許岱軒</span>
+                <span>攝影：朱光弘</span>
+                <span>策劃設計：王結玲 </span>
+            </div>
+            <div class="copyright">
+                &copy; 2024 TVBS Media Inc. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
