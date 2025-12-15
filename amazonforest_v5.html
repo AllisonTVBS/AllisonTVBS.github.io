@@ -43,25 +43,23 @@
         /* --- 3. 首屏沈浸式 (Hero Section) --- */
         .hero {
             position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--text-light); overflow: hidden;
-            /* 背景圖樣式 (請將這裡的 URL 替換成您的圖片網址) */
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://admin-legacy.tvbs-internal.com.tw/piwigo/upload/2025/12/15/20251215124712-03af4562.jpeg');
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://github.com/AllisonTVBS/AllisonTVBS.github.io/blob/main/amazon%20forest-cover.jpg?raw=true');
             background-size: cover; background-position: center;
         }
         .hero-content { position: relative; z-index: 1; padding: 20px; max-width: 800px; }
         .hero-content h1 { font-size: 3.5rem; font-weight: 900; text-shadow: 0 4px 10px rgba(0,0,0,0.5); margin-bottom: 20px; line-height: 1.2; }
-        
-//* 修正 scroll-hint 位置：將底部距離設為 80px，確保貼近第一屏底部但又不會被切掉。 */
+
         .scroll-hint { 
             position: absolute; 
-            bottom: 80px; /* 從底部邊緣向上推 80px */
+            bottom: 0px; 
             left: 50%; 
             transform: translateX(-50%); 
-            animation: bounce 2s infinite; 
+            animation: bounce 2s infinite;
             font-size: 0.9rem; 
             opacity: 0.8;
             padding: 10px; 
-            background: rgba(0, 0, 0, 0.5); /* 增加背景，讓提示文字更清晰 */
-            color: #ffffff; /* 確保文字是白色 */
+            background: rgba(0, 0, 0, 0.5); 
+            color: #ffffff; 
             border-radius: 5px;
             white-space: nowrap;
             z-index: 5;
@@ -531,12 +529,12 @@
              
              <img src="https://raw.githubusercontent.com/AllisonTVBS/AllisonTVBS.github.io/main/TVBS%20logo-white.png" alt="TVBS Logo" style="height: 45px; margin-bottom: 25px;">
              
-             <h3 style="margin: 0 0 35px 0; color: #fff; font-weight: bold; font-size: 1.5rem; letter-spacing: 1px;">TVBS邀您一同正視雨林現況，守護地球綠肺</h3>
+             <h3 style="margin: 0 0 35px 0; color: #fff; font-weight: bold; font-size: 1.5rem; letter-spacing: 1px;">TVBS邀您正視雨林現況，守護地球綠肺</h3>
             
             <a href="#" style="display: inline-block; margin-top: 40px; margin-bottom: 30px; padding: 12px 35px; background-color: #FFCC00; color: #003690; text-decoration: none; border-radius: 50px; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">分享專題</a>
             
             <div class="credits" style="margin-bottom: 10px; font-size: 1rem; color: #dddddd; line-height: 1.8;">
-                製作人/記者：許岱軒　　攝影：朱光弘　　策展人：陳祖晴　　監製：王結玲
+                記者：許岱軒　　攝影：朱光弘　　策展人：陳祖晴　　監製：王結玲
             </div>
             
             <p class="copyright" style="font-size: 0.85rem; color: #888888; margin: 0;">
